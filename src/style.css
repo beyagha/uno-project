@@ -6,9 +6,6 @@
   gap: 20px;
 }
 #enter {
-  --bg: #000;
-  --hover-bg: #ff90e8;
-  --hover-text: #000;
   color: #fff;
   cursor: pointer;
   border: 1px solid var(--bg);
@@ -28,6 +25,16 @@
 #enter:active {
   transform: translate(0);
   box-shadow: none;
+}
+.enter-bg{
+  --bg: #000;
+  --hover-bg: #ff90e8;
+  --hover-text: #000;
+}
+.enter-disable{
+  --bg: #616161;
+  --hover-bg: #616161;
+  --hover-text: #fff;
 }
 #ready {
   --bg: #000;
@@ -59,7 +66,7 @@ label{
   font-size: 20px;
 }
 .title{
-  
+
   font-weight: bold;
   text-transform: uppercase;
   font-size: 50px;

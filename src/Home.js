@@ -19,7 +19,8 @@ export class Home {
   onClick = () => {
     
     //disable button
-    document.getElementById(enter).disabled = 'true';
+    this.enter.disabled = 'true';
+    this.enter.classList.add("enter-disable")
     //ecouter event updateplayers
     //afficher nom des jouers et lerus etats => creant des 'p' dans le html 
     document.getElementById("namevalide").innerHTML = "pseudo enregitré";
