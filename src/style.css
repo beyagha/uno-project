@@ -1,9 +1,39 @@
-.card{
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+  background: #f8f4e5;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+input{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+.card {
   padding-top: 100px;
   display: flex;
-  flex-direction:column;
+  gap: 20px;
+}
+
+.box-name {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 20px;
+  background: #f8f4e5;
+  padding: 50px 100px;
+  border: 2px solid rgba(0, 0, 0, 1);
+  box-shadow: 15px 15px 1px  #ff90e8, 15px 15px 1px 2px rgba(0, 0, 0, 1);
+}
+#name{
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
 }
 #enter {
   color: #fff;
@@ -26,16 +56,19 @@
   transform: translate(0);
   box-shadow: none;
 }
-.enter-bg{
+
+.enter-bg {
   --bg: #000;
   --hover-bg: #ff90e8;
   --hover-text: #000;
 }
-.enter-disable{
+
+.enter-disable {
   --bg: #616161;
   --hover-bg: #616161;
   --hover-text: #fff;
 }
+
 #ready {
   --bg: #000;
   --hover-bg: #ff90e8;
@@ -44,7 +77,7 @@
   cursor: pointer;
   border: 1px solid var(--bg);
   border-radius: 4px;
-  padding: 0.8em 2em;
+  padding: 0.8em 3em;
   background: var(--bg);
   transition: 0.2s;
 }
@@ -60,14 +93,32 @@
   transform: translate(0);
   box-shadow: none;
 }
-label{
+
+label {
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 40px;
 }
-.title{
 
+.title {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 50px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+  width: 150px;
+}
+.box-list-name{
+  display: grid;
+  justify-items: center;
+  
 }

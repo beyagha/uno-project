@@ -1,22 +1,31 @@
 <!doctype html>
 <html lang="en">
-  <head>  
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/style.css">
-    <title>uno</title>
-  </head>
-  <body>
-    
-    <div class="card">
-    <div class="title">Unow Gobelins</div>
-    <label for="name">Enter your name</label>
-    <input type="text" id="name" name="name" required minlength="4" maxlength="10" size="10" />
-    <input type="button" id="enter" class="enter-bg" value="join the game">
-    <p id="namevalide"></p>
-    <input type="button" id="ready" value="ready">
-    <script type="module" src="src/main.js" ></script>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/style.css">
+  <title>uno</title>
+</head>
+
+<body>
+
+  <div class="card">
+    <div class="card-title-name">
+      <div class="title">UNO Gobelins</div>
+      <div class="box-name">
+        <label for="name">Enter your name</label>
+        <input type="text" id="name" name="name" required minlength="4" maxlength="10" size="10" />
+        <input type="button" id="enter" class="enter-bg" value="join the game">
+        <p id="namevalide"></p>
+        <input type="button" id="ready" value="ready">
+      </div>
     </div>
-  </body>
- 
+    <div class="box-list-name">
+    <ul id="myList"> Are ready </ul></div>
+
+    <script type="module" src="src/main.js"></script>
+  </div>
+</body>
+
 </html>
